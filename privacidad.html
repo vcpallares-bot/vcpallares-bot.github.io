@@ -22,9 +22,9 @@
 <body>
 <main>
   <h1>Política de privacidad de ApruebaPER</h1>
-  <p class="fecha">Última actualización: 5 de noviembre de 2026</p>
+  <p class="fecha">Última actualización: 21 de noviembre de 2026</p>
   <div class="aviso">
-    <p><strong>Información importante:</strong> ApruebaPER ofrece preparación de exámenes PER, con uso gratuito y funcionalidades Premium mediante suscripción en las versiones donde estén habilitadas. Según la versión instalada, el progreso puede guardarse solo en tu dispositivo o sincronizarse mediante Supabase. Puedes utilizar funciones gratuitas sin registrarte con correo electrónico; las versiones conectadas pueden asignarte una identidad técnica anónima.</p>
+    <p><strong>Información importante:</strong> ApruebaPER ofrece preparación de exámenes PER, con uso gratuito y funcionalidades Premium mediante suscripción en las versiones donde estén habilitadas. La versión 1.0.15 sincroniza sesiones, respuestas, progreso y resultados mediante Supabase, por lo que no se guardan exclusivamente en tu dispositivo. Puedes utilizar funciones gratuitas sin registrarte con correo electrónico; se asigna un identificador técnico seudónimo.</p>
   </div>
 
   <h2>1. Responsable del tratamiento</h2>
@@ -35,9 +35,9 @@
   <p>El tratamiento depende de la versión y de las funciones que utilices:</p>
   <ul>
     <li><strong>Progreso local:</strong> tests realizados, respuestas, preguntas acertadas o falladas, resultados, estadísticas de estudio y preferencias que permanecen en el dispositivo cuando no existe sincronización habilitada.</li>
-    <li><strong>Servicios conectados:</strong> un identificador de usuario o sesión anónima de Supabase, datos de actividad de estudio, respuestas, resultados, historial, estadísticas y preferencias necesarias para almacenar y sincronizar tu progreso. La identidad anónima no exige nombre ni email.</li>
+    <li><strong>Servicios conectados:</strong> un identificador UUID de Supabase para usuarios invitados y registrados, datos de actividad de estudio, sesiones, respuestas, resultados, historial, estadísticas y preferencias necesarias para almacenar y sincronizar tu progreso. El identificador de invitado es seudónimo, no exige nombre ni correo electrónico y puede vincularse al registro.</li>
     <li><strong>Cuenta con registro voluntario:</strong> nombre, apellidos, correo electrónico, identificador de cuenta y datos de autenticación necesarios para crear la cuenta, confirmar el correo, iniciar sesión, recuperar el acceso y gestionarla. Las contraseñas son gestionadas por el proveedor de autenticación; ApruebaPER no necesita conocerlas en texto claro.</li>
-    <li><strong>Compras y Premium:</strong> identificador de cliente de RevenueCat, producto o suscripción adquirida, estado del acceso, fechas de contratación y renovación, historial y referencias técnicas de transacciones, restauraciones y reembolsos. Los datos de tarjeta o medio de pago se gestionan en Google Play o Apple App Store y no se solicitan directamente en ApruebaPER.</li>
+    <li><strong>Compras y Premium:</strong> RevenueCat recibe el UUID de la cuenta verificada, recibos o tokens de transacción y datos sobre derechos de acceso para gestionar Premium. También se tratan datos como el producto o suscripción adquirida, estado del acceso, fechas de contratación y renovación, historial y referencias técnicas de transacciones, restauraciones y reembolsos. Los pagos se gestionan en Google Play o Apple App Store; ApruebaPER no accede a los números completos de tarjeta.</li>
     <li><strong>Información técnica y de seguridad:</strong> datos de conexión, como IP y registros técnicos, que Supabase, RevenueCat u otros proveedores necesarios pueden tratar para atender solicitudes, mantener el servicio, diagnosticar fallos y prevenir abusos. ApruebaPER no solicita acceso a la ubicación GPS para estas funciones.</li>
     <li><strong>Comunicaciones:</strong> dirección de correo electrónico y cualquier información que envíes voluntariamente al solicitar soporte o eliminación de cuenta.</li>
   </ul>
@@ -55,7 +55,7 @@
   <p>Según las funciones disponibles, utilizamos estos servicios:</p>
   <ul>
     <li><strong>Supabase:</strong> autenticación, creación de identidades técnicas, base de datos, almacenamiento y sincronización del progreso de estudio.</li>
-    <li><strong>RevenueCat:</strong> verificación y gestión del historial y estado de suscripciones y compras Premium. RevenueCat puede recibir el identificador técnico de cliente y datos de transacciones, sin que ello implique que ApruebaPER acceda a los datos de la tarjeta bancaria.</li>
+    <li><strong>RevenueCat:</strong> verificación y gestión del historial y estado de suscripciones y compras Premium. Recibe el UUID de la cuenta verificada, recibos o tokens de transacción y derechos de acceso, sin que ello implique que ApruebaPER acceda a los números completos de tarjeta.</li>
     <li><strong>Google Play y Apple App Store:</strong> distribución y, cuando resulte aplicable, procesamiento de suscripciones, pagos, devoluciones y gestión de compras conforme a las políticas de cada tienda.</li>
   </ul>
   <p>Supabase y RevenueCat prestan servicios técnicos para ApruebaPER conforme a sus condiciones de tratamiento de datos. Las tiendas pueden actuar también como responsables independientes respecto de los datos que procesan por sus propias finalidades. No entregamos a academias colaboradoras el historial individual de respuestas o datos de registro de los alumnos para que los exploten por cuenta propia.</p>
@@ -68,15 +68,15 @@
   <ul>
     <li><strong>Datos locales:</strong> permanecen en el dispositivo hasta que el usuario los borre o elimine la aplicación, sin perjuicio de posibles copias de seguridad administradas por su sistema operativo.</li>
     <li><strong>Cuenta e historial sincronizado:</strong> se conservan mientras sean necesarios para mantener la cuenta y prestar las funciones de estudio, hasta su supresión a petición válida o cuando deje de ser necesaria su conservación, salvo obligaciones legales aplicables.</li>
-    <li><strong>Suscripciones:</strong> RevenueCat y las tiendas pueden mantener registros de transacciones conforme a sus políticas y obligaciones legales. Si solicitas el borrado de tu cuenta, la eliminación de los datos del cliente en RevenueCat se gestionará también, por ahora mediante un procedimiento manual verificado cuando sea necesario.</li>
-    <li><strong>Comprobantes técnicos de eliminación:</strong> el mecanismo preparado para las versiones conectadas puede conservar un identificador técnico de cuenta, una clave de operación y su fecha para verificar que el borrado se completó, sin incluir el nombre ni el email. <strong>Actualmente no tiene un plazo automático de eliminación definido.</strong> Este punto se encuentra pendiente de establecer un ciclo de purga.</li>
+    <li><strong>Suscripciones:</strong> RevenueCat y las tiendas pueden mantener registros de transacciones conforme a sus políticas y obligaciones legales. Si solicitas el borrado de tu cuenta, también se tramitará la eliminación de los datos del cliente en RevenueCat cuando corresponda; no se ha comprobado que esa eliminación sea automática.</li>
+    <li><strong>Comprobantes técnicos de eliminación:</strong> el mecanismo para las versiones conectadas puede conservar un identificador técnico de cuenta, una clave de operación y su fecha para verificar que el borrado se completó, sin incluir el nombre ni el email. <strong>No se ha comprobado un plazo de conservación ni un plazo automático de eliminación para este marcador.</strong></li>
     <li><strong>Soporte y ejercicio de derechos:</strong> los correos y justificantes se mantienen durante la tramitación y el tiempo necesario para acreditar el cumplimiento de obligaciones o atender posibles reclamaciones; no se conservarán indefinidamente sin motivo legítimo.</li>
   </ul>
   <p>Los registros técnicos y copias de seguridad de proveedores se conservan con arreglo a los ciclos y medidas de protección que les sean aplicables. Puedes consultar el estado de una solicitud concreta escribiendo al contacto de privacidad.</p>
 
   <h2>7. Eliminación de cuenta y de datos</h2>
   <p>Puedes solicitar la eliminación de tu cuenta de ApruebaPER y los datos asociados, incluso si ya has desinstalado la aplicación, mediante nuestra <a href="https://vcpallares-bot.github.io/eliminar-cuenta.html">página de solicitud de eliminación de cuenta y datos</a>. También puedes escribir directamente a <a href="mailto:aprueba.testapp@gmail.com?subject=Eliminar%20cuenta%20ApruebaPER">aprueba.testapp@gmail.com</a>. En las versiones que incorporen la opción correspondiente, la eliminación podrá iniciarse desde Perfil.</p>
-  <p>La solicitud comprende la cuenta y los datos vinculados de progreso sincronizado que gestionamos; cuando proceda, verificaremos también la supresión del registro de cliente en RevenueCat. Los datos puramente locales que permanezcan en otros dispositivos deben borrarse desde esos dispositivos. Informaremos de cualquier conservación exigida por ley o justificada y del resultado de la solicitud.</p>
+  <p>La solicitud comprende la cuenta y los datos vinculados de progreso sincronizado que gestionamos; cuando proceda, tramitaremos también la supresión del registro de cliente en RevenueCat y verificaremos el resultado. La eliminación en RevenueCat no se ha comprobado como automática. Los datos puramente locales que permanezcan en otros dispositivos deben borrarse desde esos dispositivos. Informaremos de cualquier conservación exigida por ley o justificada y del resultado de la solicitud.</p>
   <p><strong>Eliminar tu cuenta no cancela automáticamente una suscripción.</strong> Si tienes Premium, revisa y cancela la renovación, si así lo deseas, desde <a href="https://play.google.com/store/account/subscriptions">Google Play</a> o <a href="https://apps.apple.com/account/subscriptions">Apple</a>, según dónde la contrataste.</p>
 
   <h2>8. Derechos de protección de datos</h2>
